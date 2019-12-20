@@ -1,0 +1,15 @@
+{
+  "name": "livestream-broadcaster-poc",
+  "version": "1.0.0",
+  "description": "Unauthenticated privilege remote command execution on Livestream Broadcasters.",
+  "main": "poc.js",
+  "dependencies": {
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
