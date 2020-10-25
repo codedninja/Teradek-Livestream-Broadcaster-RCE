@@ -1,4 +1,4 @@
-# CVE-2020-27685 - Teradek devices upgrade Remote Code Execution
+# [CVE-2020-27685](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27685) - Teradek devices upgrade Remote Code Execution
 The endpoint to upgrade a Teradek Device has an option to pass along a http url to download the firmware. The Upgrade endpoint performs a curl/wget request without sanitizing the http url being provided. On the Teradek devices you can set up a login feature to allow only authenticated users upgrade but by default it's not enabled. Originally disclosed to Teradek on October 18th 2019 at 9:53 AM EST.
 
 ## Effected device firmwares
@@ -24,7 +24,7 @@ The endpoint to upgrade a Teradek Device has an option to pass along a http url 
 * Vidiu Go - 3.1.7 (Patched)
 * Vidiu Pro - 3.1.7 (Patched)
 
-# CVE-2020-27686 - Livestream Broadcaster devices upgrade Remote Code Execution
+# [CVE-2020-27686](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27686)  - Livestream Broadcaster devices upgrade Remote Code Execution
 Similar to the Teradek upgrade RCE the broadcaster series of devices suffer from the same vulnability but there isn't a way to add authenication to the device to mitigate a bit. Also the Livestream Broadcaster devices have an SSH server enabled which with exploiting you are able to append your own SSH public key to `/root/.ssh/authorized_keys` and login to the device remotely. Orignally disclosed to Livestream/Vimeo on October 17th 2019 at 7:09 PM EST.
 
 ## Effected device firmware
